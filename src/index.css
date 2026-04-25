@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background-main text-white font-sans antialiased overflow-x-hidden relative;
+  }
+}
+
+@layer utilities {
+  .bg-glow {
+    @apply absolute w-[600px] h-[600px] rounded-full blur-[120px] -z-10 opacity-15;
+  }
+  .glow-blue {
+    @apply -top-[100px] -right-[100px] bg-primary;
+  }
+  .glow-teal {
+    @apply bottom-[20%] -left-[200px] bg-secondary;
+  }
+}
